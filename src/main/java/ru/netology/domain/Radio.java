@@ -1,7 +1,8 @@
 package ru.netology.domain;
 
 public class Radio {
-    int currentVolume;
+
+    private int currentVolume;
     private int currentStation;
 
     public void increaseVolume() {
@@ -38,6 +39,14 @@ public class Radio {
         else {
             currentStation = 9;
         }
+    }
+
+    public int getCurrentVolume() {
+        return currentVolume;
+    }
+
+    public void setCurrentVolume(int currentVolume) {
+        this.currentVolume = currentVolume;
     }
 
     public int getCurrentStation() {
