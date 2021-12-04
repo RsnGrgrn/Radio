@@ -5,13 +5,12 @@ import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 @Data
+
 public class Radio {
 
     private int currentVolume;
     private int currentStation;
-    private int minVolume = 0;
-    private int maxVolume = 9;
-    private int minStation = 0;
+//    private int minStation;
     private int maxStation = 10;
 
     public void increaseVolume() {
@@ -49,6 +48,18 @@ public class Radio {
             currentStation = maxStation;
         }
     }
+//
+//    public int getCurrentVolume() {
+//        return currentVolume;
+//    }
+//
+//    public void setCurrentVolume(int currentVolume) {
+//        this.currentVolume = currentVolume;
+//    }
+//
+//    public int getCurrentStation() {
+//        return currentStation;
+//    }
 
     public void setCurrentStation(int currentStation) {
         if (currentStation > maxStation) {
@@ -59,4 +70,5 @@ public class Radio {
         }
         this.currentStation = currentStation;
     }
+
 }
