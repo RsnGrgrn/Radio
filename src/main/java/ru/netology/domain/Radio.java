@@ -10,10 +10,6 @@ public class Radio {
         return maxStation;
     }
 
-    public void setMaxStation(int maxStation) {
-        this.maxStation = maxStation;
-    }
-
     public Radio() {
     }
 
