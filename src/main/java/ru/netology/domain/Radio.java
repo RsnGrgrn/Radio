@@ -34,7 +34,7 @@ public class Radio {
     }
 
     public void increaseStation() {
-        if (currentStation < --countOfStation) {
+        if (currentStation < countOfStation - 1) {
             currentStation++;
         } else {
             currentStation = 0;
@@ -45,7 +45,7 @@ public class Radio {
         if (currentStation > 0) {
             currentStation--;
         } else {
-            currentStation = --countOfStation;
+            currentStation = countOfStation - 1;
         }
     }
 
@@ -66,7 +66,7 @@ public class Radio {
             currentStation = 0;
         }
         if (currentStation < 0) {
-            currentStation = --countOfStation;
+            currentStation = countOfStation - 1;
         }
         this.currentStation = currentStation;
     }
