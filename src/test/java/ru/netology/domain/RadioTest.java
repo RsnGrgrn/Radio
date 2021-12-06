@@ -36,9 +36,9 @@ class RadioTest {
     @Test
     public void shouldSetCountOfStationAndIncreaseStation() {
         Radio radio = new Radio(19);
-        radio.setCurrentStation(19);
+        radio.setCurrentStation(14);
         radio.increaseStation();
-        assertEquals(0, radio.getCurrentStation());
+        assertEquals(15, radio.getCurrentStation());
     }
 
     @Test
@@ -70,14 +70,14 @@ class RadioTest {
         Radio radio = new Radio();
         radio.setCurrentStation(0);
         radio.decreaseStation();
-        assertEquals(10, radio.getCurrentStation());
+        assertEquals(9, radio.getCurrentStation());
     }
 
     @Test
     public void shouldVerifyNegativeStation() {
         Radio radio = new Radio();
         radio.setCurrentStation(-14);
-        assertEquals(10, radio.getCurrentStation());
+        assertEquals(9, radio.getCurrentStation());
     }
 
     @Test
@@ -100,7 +100,7 @@ class RadioTest {
         Radio radio = new Radio(35);
         radio.setCurrentStation(0);
         radio.decreaseStation();
-        assertEquals(35, radio.getCurrentStation());
+        assertEquals(34, radio.getCurrentStation());
     }
 
     @Test
