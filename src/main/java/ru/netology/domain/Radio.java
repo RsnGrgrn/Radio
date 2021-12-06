@@ -10,8 +10,12 @@ public class Radio {
 
     private int currentVolume;
     private int currentStation;
-//    private int minStation;
+    private int minStation;
     private int maxStation = 10;
+
+    public Radio(int maxStation) {
+        this.maxStation = maxStation;
+    }
 
     public void increaseVolume() {
         if (currentVolume < 100) {
